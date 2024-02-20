@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script
+      src="https://kit.fontawesome.com/22a70726e2.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+      .font-raleway {
+        font-family: "Inter", sans-serif;
+      }
+    </style>
+    <title>Curve</title>
+  </head>
+  <body class="font-raleway">
+    <header class="max-w-screen-xl mx-auto">
+      <nav>
+        <div class="navbar bg-base-100">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+              >
+                <li><a>Home</a></li>
+                <li><a>About</a></li>
+                <li><a>Destination</a></li>
+                <li><a>Search</a></li>
+              </ul>
+            </div>
+            <a class="text-4xl font-extrabold">Curve-Ticket</a>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1 text-base">
+              <li><a>Home</a></li>
+              <li><a>About</a></li>
+              <li><a>Destination</a></li>
+              <li><a>Search</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end">
+            <a
+              class="btn text-xl font-bold text-[#1DD100] border border-[#1DD10066] bg-[#1DD1001A]"
+              >Bus <i class="fa-solid fa-van-shuttle"></i
+            ></a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!-- banner section -->
+      <section
+        style="
+          background-image: linear-gradient(
+              to right,
+              rgba(3, 7, 18, 0.5),
+              rgba(3, 7, 18, 0)
+            ),
+            url('./images/banner.png');
+          background-position: center center;
+          background-size: cover;
+        "
+        class="max-w-screen-xl p-5 rounded-[32px] banner h-[550px] bg-no-repeat mx-auto bg-center flex flex-col justify-center items-center"
+      >
+        <div class=" flex flex-col items-center">
+          <h1
+            class="text-3xl lg:text-5xl font-extrabold leading-[40px] lg:leading-[85px] text-center text-white"
+          >
+            End-to-End Travel with <br />
+            <span class="text-green-500 text-5xl lg:text-7xl">Curve</span>
+          </h1>
+          <div
+            class="text-white w-[90%] lg:w-[50%] text-sm lg:text-lg text-center mt-4 "
+          >
+            Yes, you can run unit tests and view the results directly within the
+            app. The integrated testing features allow for a streamlined .
+          </div>
+          <button class="bg-green-500 btn text-base lg:text-xl font-bold border-none mt-8">
+            Buy ticket
+          </button>
+        </div>
+      </section>
+      <!-- best offer section -->
+      <section class="best-offer mt-28 flex flex-col items-center">
+        <h1 class="text-3xl lg:text-4xl  font-bold text-center">Best offers for you</h1>
+        <!-- offer card parent -->
+        <div class="flex  flex-col lg:flex-row items-center  mt-10 gap-6">
+          <!-- offer for new 15 -->
+          <div
+            class="bg-[#FFBF0F] w-[98%] lg:w-auto h-[200px] rounded-3xl flex justify-center items-center"
+          >
+            <!-- left section -->
+            <div class="p-5 lg:p-8 flex-auto">
+              <h1>
+                <span class="text-3xl lg:text-4xl font-black">15% OFF</span><br />
+                <span class="text-base lg:text-xl font-medium">on your next purchase</span
+                ><br />
+                <span class="text-sm lg:text-lg">use by January 2024</span>
+              </h1>
+            </div>
+            <img class="h-auto" src="./images/cupon-devider.png" alt="" />
+            <!-- right section -->
+            <div class="p-5 lg:p-8 text-center">
+              <h1>
+                <span class="text-xl lg:text-3xl font-bold">NEW15</span><br />
+                <span class="text-base lg:text-xl">Coupon Code</span>
+              </h1>
+            </div>
+          </div>
+          <!-- offer for couple 20 -->
+          <div
+            class="bg-[#F78C9C] w-[98%] lg:w-auto h-[200px] rounded-3xl flex justify-center items-center"
+          >
+            <!-- left section -->
+            <div class="p-5 lg:p-8 flex-auto">
+              <h1>
+                <span class="text-3xl lg:text-4xl font-black">20% OFF</span><br />
+                <span class="text-base lg:text-xl font-medium">on your next purchase</span
+                ><br />
+                <span class="text-sm lg:text-lg">use by January 2024</span>
+              </h1>
+            </div>
+            <img class="h-auto" src="./images/cupon-devider.png" alt="" />
+            <!-- right section -->
+            <div class="p-5 lg:p-8 text-center">
+              <h1>
+                <span class="text-xl lg:text-3xl font-bold">Couple 20</span><br />
+                <span class="text-base lg:text-xl">Coupon Code</span>
+              </h1>
+            </div>
+          </div>
+        </div>
+
+        <button
+          class="btn mt-12 text-[#1DD100] border-[#1DD100] bg-white hover:bg-[#1DD100] hover:text-white hover:border-none"
+        >
+          See All Offers
+        </button>
+      </section>
+      <!-- Show-Case ticket section -->
+      <section class="show-case-ticket"></section>
+      <section class="finalize-ticket"></section>
+    </main>
+    <footer></footer>
+  </body>
+</html>
