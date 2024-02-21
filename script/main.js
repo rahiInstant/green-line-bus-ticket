@@ -32,23 +32,11 @@ function updateCart(arr) {
     couponBtn.removeAttribute("disabled");
     couponBtn.style.backgroundColor = "#1DD100";
     couponInput.removeAttribute("disabled");
-    Name.removeAttribute("disabled");
-    phone.removeAttribute("disabled");
-    mail.removeAttribute("disabled");
   } else {
     couponBtn.setAttribute("disabled", true);
     couponBtn.style.backgroundColor = "#bebebe";
     couponInput.setAttribute("disabled", true);
     document.getElementById("coupne-parent").classList.remove("hidden");
-    Name.setAttribute("disabled", true);
-    phone.setAttribute("disabled", true);
-    mail.setAttribute("disabled", true);
-    nextBtn.setAttribute("disabled", true);
-    nextBtn.style.backgroundColor = "#bebebe";
-    couponInput.value = "";
-    Name.value = "";
-    phone.value = "";
-    mail.value = "";
   }
 }
 
@@ -57,6 +45,17 @@ function bookTicket(event) {
     event.target.style.backgroundColor = "#0307121a";
     event.target.style.color = "#03071280";
     orderInfo.splice(orderInfo.indexOf(event.target.innerText), 1);
+    if (orderInfo.length <= 0) {
+      Name.setAttribute("disabled", true);
+      phone.setAttribute("disabled", true);
+      mail.setAttribute("disabled", true);
+      nextBtn.setAttribute("disabled", true);
+      nextBtn.style.backgroundColor = "#bebebe";
+      couponInput.value = "";
+      Name.value = "";
+      phone.value = "";
+      mail.value = "";
+    }
     updateCart(orderInfo);
   } else {
     if ((orderInfo.length >= 0) & (orderInfo.length < 4)) {
@@ -66,6 +65,11 @@ function bookTicket(event) {
         orderInfo.push(event.target.innerText);
       }
       updateCart(orderInfo);
+      if (orderInfo.length > 0) {
+        Name.removeAttribute("disabled");
+        phone.removeAttribute("disabled");
+        mail.removeAttribute("disabled");
+      }
     }
   }
 }
@@ -93,7 +97,6 @@ nextBtn.addEventListener("click", function () {
   modal.classList.remove("opacity-0");
   modal.classList.remove("pointer-events-none");
   document.body.style.overflow = "hidden";
-  
 });
 
 completeBtn.addEventListener("click", function () {
@@ -102,9 +105,14 @@ completeBtn.addEventListener("click", function () {
   document.body.style.overflow = "";
 });
 
-mail.addEventListener("keyup", function () {
-  if (Name.value != "" && (phone.value != "") & (mail.value != "")) {
-    nextBtn.removeAttribute("disabled");
-    nextBtn.style.backgroundColor = "#1DD100";
-  }
+[Name, phone, mail].forEach((item) => {
+  item.addEventListener("change", function () {
+    if (Name.value != "" && (phone.value != "") & (mail.value != "")) {
+      nextBtn.removeAttribute("disabled");
+      nextBtn.style.backgroundColor = "#1DD100";
+    } else if (Name.value == "" && (phone.value == "") & (mail.value == "")) {
+      nextBtn.setAttribute("disabled", true);
+      nextBtn.style.backgroundColor = "#bebebe";
+    }
+  });
 });
