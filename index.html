@@ -14,6 +14,11 @@
     ></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width:1024px)"
+      href="another-style.css"
+    />
     <title>Curve</title>
   </head>
   <body class="font-raleway">
@@ -115,10 +120,10 @@
         <div class="flex flex-col lg:flex-row items-center mt-10 gap-6">
           <!-- offer for new 15 -->
           <div
-            class="bg-[#FFBF0F] w-[98%] lg:w-auto h-[200px] rounded-3xl flex justify-center items-center"
+            class="bg-[#FFBF0F]  lg:w-auto h-[200px] rounded-3xl flex justify-center items-center"
           >
             <!-- left section -->
-            <div class="p-5 lg:p-8 w-full">
+            <div class="p-5 lg:pr-8 pr-0 lg:p-8">
               <h1>
                 <span class="text-3xl lg:text-4xl font-black">15% OFF</span
                 ><br />
@@ -132,19 +137,19 @@
             <img src="./images/cupon-devider.png" alt="" />
 
             <!-- right section -->
-            <div class="p-5 lg:p-8 text-center">
-              <h1>
+            <div class="p-5 lg:pl-8 pl-0 lg:p-8 text-center">
+              <div>
                 <span class="text-xl lg:text-3xl font-bold">NEW15</span><br />
                 <span class="text-base lg:text-xl">Coupon Code</span>
-              </h1>
+              </div>
             </div>
           </div>
           <!-- offer for couple 20 -->
           <div
-            class="bg-[#F78C9C] w-[98%] lg:w-auto h-[200px] rounded-3xl flex justify-center items-center"
+            class="bg-[#F78C9C] lg:w-auto h-[200px] rounded-3xl flex justify-center items-center"
           >
             <!-- left section -->
-            <div class="p-5 lg:p-8 w-full">
+            <div class="p-5 lg:pr-8 pr-0 lg:p-8">
               <h1>
                 <span class="text-3xl lg:text-4xl font-black">20% OFF</span
                 ><br />
@@ -156,9 +161,9 @@
             </div>
             <img class="h-auto" src="./images/cupon-devider.png" alt="" />
             <!-- right section -->
-            <div class="p-5 lg:p-8 text-center">
+            <div class="p-5 lg:pl-8 pl-0 lg:p-8 text-center">
               <h1>
-                <span class="text-xl lg:text-3xl font-bold">Couple 20</span
+                <span class="text-lg lg:text-3xl font-bold">Couple 20</span
                 ><br />
                 <span class="text-base lg:text-xl">Coupon Code</span>
               </h1>
@@ -178,7 +183,7 @@
       >
         <div class="text-center flex flex-col items-center">
           <h1 class="text-4xl font-bold">P.H Paribahan</h1>
-          <h1 class="mt-6 text-lg w-1/2">
+          <h1 class="mt-6 text-lg w-[90%] lg:w-1/2">
             Yes, you can run unit tests and view the results directly within the
             app. The integrated testing features allow for a streamlined .
           </h1>
@@ -187,7 +192,9 @@
         <div
           class="bg-white rounded-3xl mt-11 flex flex-col lg:flex-row items-center max-w-screen-xl mx-auto w-[90%]"
         >
-          <div class="px-8 py-7 flex-1 border-b-2 lg:border-r-2 lg:border-b-0 border-[#1DD100] border-dashed w-full text-center lg:text-left">
+          <div
+            class="px-5 lg:px-8 py-7 flex-1 border-b-2 lg:border-r-2 lg:border-b-0 border-[#1DD100] border-dashed w-full text-center lg:text-left"
+          >
             <!-- top section -->
             <div class="flex flex-col lg:flex-row justify-between items-center">
               <div class="flex flex-col lg:flex-row gap-4 items-center">
@@ -199,11 +206,11 @@
               </div>
               <div class="flex gap-2 bg-[#1DD10026] py-3 px-4 rounded-xl mt-6">
                 <img class="w-7 h-7" src="./images/seat-green.png" alt="" />
-                <h1 class="text-lg font-medium ">40 Seats left</h1>
+                <h1 class="text-lg font-medium">40 Seats left</h1>
               </div>
             </div>
             <!-- bottom section -->
-            <div class="p-8 mt-6 bg-[#F7F8F8] rounded-3xl">
+            <div class="p-4 lg:p-8 mt-6 bg-[#F7F8F8] rounded-3xl">
               <div class="flex border-b-2 border-dashed justify-between">
                 <h1>Route</h1>
                 <h1 class="mb-6">Dhaka - Sylhet</h1>
@@ -212,20 +219,28 @@
                 <h1>Departure Time</h1>
                 <h1 class="mb-6">9:00 PM</h1>
               </div>
-              <div class="flex text-sm lg:text-base justify-between gap-3 lg:gap-5 mt-6 text-center">
-                <div class="bg-[#0307120D] min-h-14 flex flex-col justify-center items-center lg:flex-row py-3 px-4 rounded-xl w-full">
+              <div
+                class="flex text-sm lg:text-base justify-between gap-3 lg:gap-5 mt-6 text-center"
+              >
+                <div
+                  class="bg-[#0307120D] min-h-14 flex flex-col justify-center items-center lg:flex-row py-3 px-4 rounded-xl w-full"
+                >
                   <h1>Boarding Point</h1>
-                  <h1 class="hidden lg:inline"> - </h1>
+                  <h1 class="hidden lg:inline">-</h1>
                   <h1>Laxmipur</h1>
                 </div>
-                <div class="bg-[#0307120D] min-h-14 flex flex-col justify-center items-center  lg:flex-row  py-3 px-4 rounded-xl w-full">
+                <div
+                  class="bg-[#0307120D] min-h-14 flex flex-col justify-center items-center lg:flex-row py-3 px-4 rounded-xl w-full"
+                >
                   <h1>Dropping Point</h1>
-                  <h1 class="hidden lg:inline"> - </h1>
+                  <h1 class="hidden lg:inline">-</h1>
                   <h1>Bogura</h1>
                 </div>
-                <div class="bg-[#0307120D] min-h-14 flex flex-col justify-center items-center  lg:flex-row  py-3 px-4 rounded-xl w-full">
+                <div
+                  class="bg-[#0307120D] min-h-14 flex flex-col justify-center items-center lg:flex-row py-3 px-4 rounded-xl w-full"
+                >
                   <h1>Est. Time</h1>
-                  <h1 class="hidden lg:inline"> - </h1>
+                  <h1 class="hidden lg:inline">-</h1>
                   <h1>11 Hour</h1>
                 </div>
               </div>
@@ -240,10 +255,12 @@
         </div>
         <!-- finalize ticket section -->
         <div
-          class="bg-white rounded-3xl mt-11 flex p-8 gap-4 max-w-screen-xl mx-auto"
+          class="bg-white rounded-3xl mt-11 flex flex-col lg:flex-row p-5  lg:p-8 gap-24 lg:gap-4 max-w-screen-xl mx-auto w-[90%]"
         >
           <!-- left section -->
-          <div class="border-r-2 border-dashed border-[#0307124D] pr-6">
+          <div
+            class="lg:border-r-2 border-b-2 lg:border-b-0 border-dashed border-[#0307124D] lg:pr-6 pb-6 lg:pb-0"
+          >
             <div
               class="text-2xl font-semibold pb-6 border-b-2 border-[#03071233] border-dashed"
             >
@@ -261,9 +278,9 @@
                 <h1>Selected</h1>
               </div>
             </div>
-            <div class="mt-6 flex">
+            <div class="mt-6 flex justify-center">
               <div class="grid-1">
-                <div class="w-28 h-14 rounded-xl"></div>
+                <div class="w-11 lg:w-28 h-7 lg:h-14 rounded-xl"></div>
                 <div class="seat-chr">A</div>
                 <div class="seat-chr">B</div>
                 <div class="seat-chr">C</div>
@@ -275,9 +292,9 @@
                 <div class="seat-chr">I</div>
                 <div class="seat-chr">J</div>
               </div>
-              <div class="grid-2 mr-7">
-                <div class="w-28 h-14 rounded-xl"></div>
-                <div class="w-28 h-14 rounded-xl"></div>
+              <div class="grid-2 mr-3 lg:mr-7">
+                <div class="w-11 lg:w-28 h-7 lg:h-14 rounded-xl"></div>
+                <div class="w-11 lg:w-28 h-7 lg:h-14 rounded-xl"></div>
                 <div class="ticket-btn">A1</div>
                 <div class="ticket-btn">A2</div>
                 <div class="ticket-btn">B1</div>
@@ -299,11 +316,11 @@
                 <div class="ticket-btn">J1</div>
                 <div class="ticket-btn">J2</div>
               </div>
-              <div class="grid-2 ml-7">
+              <div class="grid-2 ml-3 lg:ml-7">
                 <div class=""></div>
                 <div class="ticket-btn">
                   <img
-                    class="h-8 w-8"
+                    class="h-5 lg:h-8 w-5 lg:w-8"
                     src="./images/steering-wheel.png"
                     alt=""
                   />
@@ -329,7 +346,6 @@
                 <div class="ticket-btn">J3</div>
                 <div class="ticket-btn">J4</div>
               </div>
-              <div></div>
             </div>
           </div>
           <!-- right section -->
@@ -356,6 +372,16 @@
                 <div class="w-28 text-right">Price</div>
               </div>
               <div class="border-b border-[#03071233] font-normal">
+                <div class="text-base flex justify-between py-4">
+                  <div class="w-28">C2</div>
+                  <div class="w-28 pl-5">Economy</div>
+                  <div class="w-28 text-right">550</div>
+                </div>
+                <div class="text-base flex justify-between py-4">
+                  <div class="w-28">C2</div>
+                  <div class="w-28 pl-5">Economy</div>
+                  <div class="w-28 text-right">550</div>
+                </div>
                 <div class="text-base flex justify-between py-4">
                   <div class="w-28">C2</div>
                   <div class="w-28 pl-5">Economy</div>
@@ -427,7 +453,7 @@
               />
             </div>
             <div
-              class="text-base text-[#03071299] underline underline-offset-4 flex justify-center gap-5 mt-6"
+              class="text-base text-[#03071299] underline underline-offset-4 flex flex-wrap text-center justify-center gap-5 mt-6"
             >
               <h1>Terms and Conditions</h1>
               <h1>Cancellation Policy</h1>
@@ -436,12 +462,14 @@
         </div>
       </section>
     </main>
-    <footer class="bg-[#030712] px-32 py-28">
+    <footer
+      class="bg-[#030712] px-4 lg:px-32 py-20 lg:py-28 mt-28 text-center lg:text-left"
+    >
       <div
-        class="flex justify-between text-white pb-12 border-b border-[#FFFFFF4D] border-dashed"
+        class="flex flex-col lg:flex-row gap-10 justify-between items-center text-white pb-12 border-b border-[#FFFFFF4D] border-dashed"
       >
         <div>
-          <a class="text-2xl lg:text-4xl font-bold lg:font-extrabold"
+          <a class="text-4xl font-bold lg:font-extrabold"
             ><span class="text-[#1DD100]">c</span>Ticket</a
           >
           <h1 class="text-lg font-normal mt-4 w-[350px]">
@@ -456,11 +484,15 @@
         </div>
       </div>
       <!-- <hr class="border-dashed bg-[#FFFFFF4D]" /> -->
-      <div class="text-white text-base flex justify-between mt-8">
+      <div
+        class="text-white text-base flex flex-col lg:flex-row justify-between mt-8"
+      >
         <div class="font-normal">
           @all rights reserved, cTicket services limited.2024
         </div>
-        <div class="font-medium flex gap-12">
+        <div
+          class="font-medium flex flex-wrap gap-4 lg:gap-12 justify-center mt-5"
+        >
           <div>Terms & condition</div>
           <div>Return & refund policy</div>
           <div>Privacy policy</div>

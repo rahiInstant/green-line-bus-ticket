@@ -4,8 +4,6 @@
 }
 
 .ticket-btn {
-  width: 110px;
-  height: 56px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -20,8 +18,6 @@
   font-size: 18px;
   font-weight: 500;
   color: #03071280;
-  width: 56;
-  height: 56;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -38,7 +34,9 @@
 .grid-2 {
   display: grid;
   grid-template-columns: 110px 110px;
-  grid-template-rows: repeat(10, 56px);
+  grid-template-rows: repeat(11, 56px);
   column-gap: 30px;
   row-gap: 22px;
 }
+
+
