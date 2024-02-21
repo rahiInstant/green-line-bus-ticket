@@ -122,5 +122,4 @@ completeBtn.onclick = function() {
   mail.value = ''
   nextBtn.setAttribute('disabled', true)
   nextBtn.style.backgroundColor = "#bebebe";
-  
 }
