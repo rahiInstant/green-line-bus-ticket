@@ -96,13 +96,11 @@ document.getElementById("btn").onclick = function (event) {
 nextBtn.addEventListener("click", function () {
   modal.classList.remove("opacity-0");
   modal.classList.remove("pointer-events-none");
-  document.body.style.overflow = "hidden";
 });
 
 completeBtn.addEventListener("click", function () {
   modal.classList.add("opacity-0");
   modal.classList.add("pointer-events-none");
-  document.body.style.overflow = "";
 });
 
 [Name, phone, mail].forEach((item) => {
@@ -116,3 +114,12 @@ completeBtn.addEventListener("click", function () {
     }
   });
 });
+
+
+completeBtn.onclick = function() {
+  Name.value = ''
+  phone.value = ''
+  mail.value = ''
+  nextBtn.setAttribute('disabled', true)
+  
+}
