@@ -121,5 +121,6 @@ completeBtn.onclick = function() {
   phone.value = ''
   mail.value = ''
   nextBtn.setAttribute('disabled', true)
+  nextBtn.style.backgroundColor = "#bebebe";
   
 }
